@@ -1,0 +1,14 @@
+div{
+    font-size: 0.6rem;
+    width: 95%;
+    margin: 2.5%;
+    padding: 0;
+    background-color: lightblue;
+    border-radius: 0.5rem ;
+}
+
+div:hover{
+    background-color: darkseagreen;
+}
+
+

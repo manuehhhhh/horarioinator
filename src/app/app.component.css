@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+app-horario{
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+app-lista-total{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0;
+    padding: 0; 
+}

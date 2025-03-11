@@ -1,0 +1,10 @@
+<input type="text" placeholder='nombre de materia' id="materia" name="materia" [formControl]="formularioMateria">
+
+<div>
+@for(sec of lista(); track sec){
+    @if( (sec.materia.includes(formularioMateria.value!)) || ( formularioMateria.value == "") ){
+        <app-tarjeta-de-seccion [sec]="sec" (dev)="sel.emit($event)"></app-tarjeta-de-seccion>
+    }
+    
+}
+</div>

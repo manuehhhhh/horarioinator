@@ -1,0 +1,17 @@
+<div (click)="dev.emit(sec())">
+    <h1>{{sec().materia}}</h1>
+    <h2>{{"NRC: " + sec().nrc}}</h2>
+    <h2>{{"Prof: "+sec().profesor}}</h2>
+    @for(dias of sec().horas.keys(); track sec().horas){
+        @if(sec().horas.get(dias)?.length !== 0){
+            <h3>{{dias}}
+
+            
+            @for(bloque of sec().horas.get(dias); track bloque[0]){
+                <span>{{bloque[0].toString() + "--" + (bloque[0]+bloque[1]).toString()}}</span>
+            }
+            </h3>
+        }
+
+    }
+</div>

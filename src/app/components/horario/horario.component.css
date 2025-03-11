@@ -1,0 +1,30 @@
+div.horario{
+    display :flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+div.horario div{
+    border: 0.1rem solid black;
+    border-radius: 0.1rem;
+}
+
+div.dia{
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+}
+
+div{
+    font-size: 0.75rem;
+}
+
+div.dia div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    height:7.2vh;
+}
